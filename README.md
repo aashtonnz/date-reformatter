@@ -1,5 +1,5 @@
 # date-reformat
-A simple Java application for reformatting a stream of dates read from standard input.
+*A simple Java application for reformatting a stream of dates read from standard input.*
 
 If a line is in a recognised format and is a valid date then it is reformatted and printed, otherwise the line and a relevant error message is printed.
 
@@ -12,6 +12,6 @@ A line is in a recognised format `day <sep> month <sep> year` if:
 
 A date is valid if:
 1. it is between the years 1753 and 3000, and 
-2. 2. the month and day are valid (noting leap years).
+2. the month and day are valid (noting leap years).
 
 Dates are printed in the format `dd <space> Mon <space> yyyy`. For example, `03-1-85` is printed as `3 Jan 1985`.
