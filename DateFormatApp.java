@@ -89,6 +89,7 @@ public class DateFormatApp {
     * Returns the day as an integer value.
     *
     * @param day the day to be returned as an integer
+    * @return the day as an integer
     */
    private static int dayToInt(String day) {
       return Integer.parseInt(day);
@@ -98,6 +99,7 @@ public class DateFormatApp {
     * Returns the month as an integer value. 
     *
     * @param month the month to be returned as an integer
+    * @return the month as an integer
     */
    private static int monthToInt(String month) {
       Scanner input = new Scanner(month);
@@ -115,6 +117,7 @@ public class DateFormatApp {
     * Returns the year as an integer value.
     *
     * @param year the year to be returned as an integer
+    * @return the year as an integer
     */
    private static int yearToInt(String year) {
       int intYear = Integer.parseInt(year);
@@ -134,6 +137,7 @@ public class DateFormatApp {
     * @param day the day as an integer
     * @param month the month as an integer
     * @param year the year as an integer
+    * @return true if the day, month, and year correspond to a valid date
     */
    private static boolean validDate(int day, int month, int year) {
       if (year < 1753 || 3000 < year || month < 1 || 12 < month ||
@@ -156,6 +160,7 @@ public class DateFormatApp {
     * Returns 'true' if the given year is a leap year.
     *
     * @param year the year to be checked if it is a leap year
+    * @return true if the year is a leap year
     */
    private static boolean isLeapYear(int year) {
       return year % 4 == 0 && !(year % 100 == 0 && year % 400 != 0);
@@ -166,6 +171,7 @@ public class DateFormatApp {
     * leading zero if necessary.
     *
     * @param day the day, as an integer, to formatted
+    * @return the day as a 'dd' string
     */
    private static String formatDay(int day) {
       return day < 10 ? "0" + day : Integer.toString(day);
@@ -175,6 +181,7 @@ public class DateFormatApp {
     * Returns the month, given as an integer, as a 'Mon' string.
     *
     * @param month the month, as an integer, to be formatted
+    * @return the month as an 'Mon' string
     */
    private static String formatMonth(int month) {
       String[] monthArray = {"Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", 
@@ -186,6 +193,7 @@ public class DateFormatApp {
     * Returns the year, given as an integer, as a 'yyyy' string.
     *
     * @param year the year, as an integer, to be formatted
+    * @return the year as a 'yyyy' string
     */
    private static String formatYear(int year) {
       return Integer.toString(year);
