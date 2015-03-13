@@ -11,6 +11,7 @@ A line is in a recognised format `day <sep> month <sep> year` if:
 4. `<sep>` is a single space, a hyphen, or a slash.
 
 A date is valid if:
+
 1. it is between the years 1753 and 3000, and 
 2. the month and day are valid (noting leap years).
 
